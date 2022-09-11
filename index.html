@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "style.css">
+        <script type = "text/javascript" src = "app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <h1>КАЛЬКУЛЯТОР ЧАЕВЫХ</h1>
+            <div class = "wrapper">
+                <div>
+                    <label for="amount">Сумма счета?</label>
+                    <input type = "text" id = "amount" placeholder="Необходимая сумма к оплате"> 
+                </div>
+                <p>Как прошло обслуживание?</p>
+                <div class="radio">
+                    <div class="radio_btn">
+                        <input id="radio_1" type="radio" name="rad" value="0.25">
+                        <label for="radio_1"><img src="images/25.png" alt=""></label>
+                    </div>
+                    <div class="radio_btn">
+                        <input id="radio_2" type="radio" name="rad" value="0.20">
+                        <label for="radio_2"><img src="images/20.png" alt=""></label>
+                    </div>
+                    <div class="radio_btn">
+                        <input id="radio_3" type="radio" name="rad" value="0.15">
+                        <label for="radio_3"><img src="images/15.png" alt=""></label>
+                    </div>
+                    <div class="radio_btn">
+                        <input id="radio_4" type="radio" name="rad" value="0.10">
+                        <label for="radio_4"><img src="images/10.png" alt=""></label>
+                    </div>
+                    <div class="radio_btn">
+                        <input id="radio_5" type="radio" name="rad" value="0.05">
+                        <label for="radio_5"><img src="images/5.png" alt=""></label>
+                    </div>
+                </div>
+                <div>
+                    <label for="persons">Количество человек?</label>
+                    <input type = "text" id = "persons" placeholder="Количество людей, разделяющих счет">
+                </div>
+            </div>
+            <button id = "calculate">Посчитать</button>
+            <div class = "tip">
+                <p>Сумма чаевых с каждого</p>
+                <p><span id = "total">0</span> &#8381<span id = "each"></span></p>
+            </div>
+        </div>
+    </body>
+</html>
